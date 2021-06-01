@@ -1,6 +1,7 @@
 import { groupBy, map, mergeMap, toArray } from 'rxjs/operators';
 import { OperatorFunction } from 'rxjs';
-//reusable custom operator
+//reusable custom rxjs operator
+// Don't touch this function until u know RXJS enough
 export function customOp<R>(): OperatorFunction<any, any> {
   return input$ =>
     input$.pipe(

@@ -26,7 +26,7 @@ export class LienService {
 
   constructor() {}
 
-  // Don't touch this function until u know RXJS enough
+  //custom operator usage
   get list() {
     return from(this.liens).pipe(customOp());
   }
