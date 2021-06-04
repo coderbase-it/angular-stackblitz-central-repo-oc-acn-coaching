@@ -18,6 +18,12 @@ export class LienService {
       Category.ANGULAR
     ),
     new Lien(
+      'angular-content-projection-table-use-case',
+      'Reusable Table ng-content use case 🧾',
+      Category.ANGULAR
+    ),
+
+    new Lien(
       'angular-control-accessor-form-elements',
       'Form nested component with Control value accessor 📝',
       Category.ANGULAR
