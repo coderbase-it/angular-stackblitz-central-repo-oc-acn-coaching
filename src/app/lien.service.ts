@@ -23,7 +23,11 @@ export class LienService {
       Category.ANGULAR
     ),
     new Lien('angular-css-part', 'Css basic with Angular 🖌', Category.ANGULAR),
-
+    new Lien(
+      'https://miro.medium.com/max/691/1*-e5Kw0GqjPq5Xs-cjPm7Ww.jpeg',
+      ' Cascading Style Sheets Specificity ',
+      Category.SITE
+    ),
     new Lien(
       'angular-control-accessor-form-elements',
       'Form nested component with Control value accessor 📝',
