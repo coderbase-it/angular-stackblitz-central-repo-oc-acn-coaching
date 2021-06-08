@@ -22,11 +22,7 @@ export class LienService {
       'Reusable Table ng-content use case 🧾',
       Category.ANGULAR
     ),
-    new Lien(
-      'angular-css-part',
-      'Css basic with Angular',
-      Category.ANGULAR
-    ),
+    new Lien('angular-css-part', 'Css basic with Angular 🖌', Category.ANGULAR),
 
     new Lien(
       'angular-control-accessor-form-elements',
