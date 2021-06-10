@@ -32,6 +32,11 @@ export class LienService {
       'angular-control-accessor-form-elements',
       'Form nested component with Control value accessor 📝',
       Category.ANGULAR
+    ),
+    new Lien(
+      'angular-routes-layout-management',
+      'Shell management with route 🏮',
+      Category.ANGULAR
     )
   ];
 
