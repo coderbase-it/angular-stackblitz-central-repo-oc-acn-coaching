@@ -37,6 +37,11 @@ export class LienService {
       'angular-routes-layout-management',
       'Shell management with route 🏮',
       Category.ANGULAR
+    ),
+    new Lien(
+      'angular-repeat-scenario',
+      'Repeat Scenario route with service logic',
+      Category.ANGULAR
     )
   ];
 
