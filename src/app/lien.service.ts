@@ -25,7 +25,7 @@ export class LienService {
     new Lien('angular-css-part', 'Css basic with Angular 🖌', Category.ANGULAR),
     new Lien(
       'https://miro.medium.com/max/691/1*-e5Kw0GqjPq5Xs-cjPm7Ww.jpeg',
-      ' Cascading Style Sheets Specificity ',
+      ' Cascading Style Sheets Specificity 🖌 ',
       Category.SITE
     ),
     new Lien(
@@ -40,7 +40,7 @@ export class LienService {
     ),
     new Lien(
       'angular-repeat-scenario',
-      'Repeat Scenario route with service logic',
+      'Repeat Scenario route with service logic  ⚙',
       Category.ANGULAR
     )
   ];
