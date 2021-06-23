@@ -1,5 +1,5 @@
 export enum Category {
-  ANGULAR =  'Angular',
+  ANGULAR = 'Angular',
   JAVASCRIPT = 'Javascript',
   TYPESCRIPT = 'Typescript',
   REACT = 'React',
@@ -11,10 +11,10 @@ export enum Category {
   IGNITE_UI = 'Ignite Ui',
   KENDO_REACT = 'Kendo React',
   OTHER = 'Other',
-  AKITA = "Akita",
-  NGRX = "NGRX",
-  NGXS = "NGXS",
-  ARTICLE = "Article",
-  SITE = "Site"
+  AKITA = 'Akita',
+  NGRX = 'NGRX',
+  NGXS = 'NGXS',
+  ARTICLE = 'Article',
+  SITE = 'Site',
+  GITHUB = 'Github'
 }
-

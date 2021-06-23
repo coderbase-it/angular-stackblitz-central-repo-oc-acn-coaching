@@ -1,17 +1,17 @@
-import { Directive, ElementRef, Renderer2, AfterViewInit } from "@angular/core";
-import { Category } from "./category.enum";
+import { Directive, ElementRef, Renderer2, AfterViewInit } from '@angular/core';
+import { Category } from './category.enum';
 
-@Directive({ 
-  selector: "[appLogo]"
+@Directive({
+  selector: '[appLogo]'
 })
 export class LogoDirective implements AfterViewInit {
   constructor(private elRef: ElementRef, private renderer: Renderer2) {}
 
   ngAfterViewInit() {
     const category = this.elRef.nativeElement.textContent;
-    const img = this.renderer.createElement("img");
-    this.renderer.setAttribute(img, "src", this.switchLogo(category));
-    this.renderer.setStyle(img, "margin-left", "10px");
+    const img = this.renderer.createElement('img');
+    this.renderer.setAttribute(img, 'src', this.switchLogo(category));
+    this.renderer.setStyle(img, 'margin-left', '10px');
     this.renderer.appendChild(this.elRef.nativeElement, img);
   }
 
@@ -28,7 +28,7 @@ export class LogoDirective implements AfterViewInit {
         return "data:image/svg+xml,%3C?xml version='1.0' encoding='utf-8'?%3E %3C!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E %3Csvg version='1.1' id='Ebene_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 80 80' style='enable-background:new 0 0 80 80;' xml:space='preserve'%3E %3Cstyle type='text/css'%3E .st0%7Bfill:%23007ACC;%7D %3C/style%3E %3Cg transform='translate(0.000000,630.000000) scale(0.100000,-0.100000)'%3E %3Cpath class='st0' d='M0,5900v-400h400h400v400v400H400H0V5900z M644.7,5931.9c20.3-5.1,35.8-14.1,50-28.8 c7.4-7.9,18.3-22.2,19.2-25.7c0.3-1-34.5-24.4-55.6-37.5c-0.8-0.5-3.8,2.8-7.2,7.9c-10.3,15-21.1,21.5-37.6,22.6 c-24.3,1.7-39.9-11-39.7-32.3c0-6.2,0.9-9.9,3.4-15c5.3-11,15.2-17.7,46.3-31.1c57.3-24.6,81.8-40.9,97-64 c17-25.8,20.8-66.9,9.3-97.5c-12.7-33.3-44.2-55.9-88.5-63.4c-13.7-2.4-46.2-2-61,0.6c-32.1,5.7-62.6,21.6-81.4,42.4 c-7.4,8.1-21.7,29.3-20.8,30.9c0.4,0.5,3.7,2.5,7.4,4.7c3.6,2,17,9.8,29.7,17.1l23,13.3l4.8-7.1c6.7-10.3,21.5-24.4,30.3-29.1 c25.5-13.5,60.6-11.6,77.8,3.9c7.4,6.7,10.4,13.7,10.4,24c0,9.3-1.1,13.3-6,20.3c-6.2,8.9-18.9,16.4-55,32 c-41.3,17.8-59,28.8-75.3,46.3c-9.4,10.2-18.3,26.4-22,40c-3,11.3-3.8,39.6-1.4,51c8.5,39.9,38.6,67.7,82,75.9 C598.1,5936.3,630.9,5935.3,644.7,5931.9z M456.9,5898.5l0.3-32.8h-52.1H353v-147.9v-147.9h-36.8h-36.8v147.9v147.9h-52.1h-52.1 v32.1c0,17.8,0.4,32.6,0.9,33c0.4,0.5,63.7,0.8,140.6,0.6l139.8-0.4L456.9,5898.5z'/%3E %3C/g%3E %3C/svg%3E";
 
       case Category.JAVASCRIPT:
-        return "https://c.staticblitz.com/assets/media/client/homepage/images/stack_icons/js-8608e5f34d31caa152040cb3b7555ffb.png";
+        return 'https://c.staticblitz.com/assets/media/client/homepage/images/stack_icons/js-8608e5f34d31caa152040cb3b7555ffb.png';
 
       case Category.IONIC:
         return "data:image/svg+xml,%3C?xml version='1.0' encoding='utf-8'?%3E %3C!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E %3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 80 80' style='enable-background:new 0 0 80 80;' xml:space='preserve'%3E %3Cstyle type='text/css'%3E .st0%7Bfill:%23478AFF;%7D %3C/style%3E %3Ctitle%3Eionic-logo-landscape%3C/title%3E %3Cpath class='st0' d='M40,21.8c-10.1,0-18.2,8.2-18.2,18.2c0,10.1,8.2,18.2,18.2,18.2S58.2,50.1,58.2,40l0,0 C58.2,30,50.1,21.8,40,21.8z'/%3E %3Ccircle class='st0' cx='66.2' cy='15.1' r='8.3'/%3E %3Cpath class='st0' d='M76.4,23.4L76,22.7l-0.5,0.6c-1.4,1.5-3.1,2.7-5,3.4L69.9,27l0.2,0.5c6.9,16.7-1,35.8-17.6,42.7 c-16.7,6.9-35.8-1-42.7-17.6s1-35.8,17.6-42.7C36,6.3,45.6,6.6,54,10.5l0.5,0.2l0.2-0.5c0.8-1.9,2.1-3.6,3.7-4.8l0.7-0.5l-0.7-0.4 C52.7,1.5,46.4,0,40,0C17.9,0,0,17.9,0,40s17.9,40,40,40c22.1,0,40-17.9,40-40C80,34.3,78.8,28.6,76.4,23.4L76.4,23.4z'/%3E %3C/svg%3E";
@@ -37,29 +37,29 @@ export class LogoDirective implements AfterViewInit {
         return "data:image/svg+xml,%3C?xml version='1.0' encoding='utf-8'?%3E %3C!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E %3Csvg version='1.1' id='Ebene_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 80 80' style='enable-background:new 0 0 80 80;' xml:space='preserve'%3E %3Cstyle type='text/css'%3E .st0%7Bfill:%23FF3E00;%7D .st1%7Bfill:%23FFFFFF;%7D %3C/style%3E %3Cpath class='st0' d='M69,10.6C61.6,0,46.9-3.2,36.3,3.6L17.7,15.4c-5.1,3.2-8.6,8.4-9.7,14.3c-0.9,4.9-0.1,10,2.2,14.5 c-1.6,2.4-2.7,5.1-3.2,8C6,58.2,7.4,64.4,11,69.4c7.5,10.6,22.1,13.8,32.7,7l18.6-11.9c5.1-3.2,8.6-8.4,9.7-14.3 c0.9-4.9,0.1-10-2.2-14.5c1.6-2.4,2.7-5.1,3.2-8C74,21.8,72.6,15.6,69,10.6'/%3E %3Cpath class='st1' d='M34.7,69.6c-5.8,1.5-12-0.8-15.4-5.7c-2.1-2.9-2.9-6.5-2.3-10.1c0.1-0.6,0.2-1.1,0.4-1.7l0.3-1l0.9,0.7 c2.1,1.6,4.5,2.8,7.1,3.5l0.7,0.2l-0.1,0.7c-0.1,1,0.2,1.9,0.7,2.7c1,1.5,2.9,2.2,4.7,1.8c0.4-0.1,0.8-0.3,1.1-0.5l18.1-11.5 c0.9-0.6,1.5-1.5,1.7-2.5c0.2-1.1,0-2.1-0.7-3c-1-1.5-2.9-2.2-4.7-1.7c-0.4,0.1-0.8,0.3-1.1,0.5l-6.9,4.4c-1.1,0.7-2.4,1.3-3.7,1.6 c-5.8,1.5-12-0.8-15.4-5.7c-2.1-2.9-2.9-6.5-2.3-10.1c0.6-3.5,2.7-6.5,5.6-8.4l18.1-11.5c1.1-0.7,2.4-1.3,3.7-1.6 c5.8-1.5,12,0.8,15.4,5.7c2.1,2.9,2.9,6.5,2.3,10.1c-0.1,0.6-0.2,1.1-0.4,1.7l-0.3,1l-0.9-0.7c-2.1-1.6-4.5-2.8-7.1-3.5l-0.7-0.2 l0.1-0.7c0.1-1-0.2-1.9-0.7-2.7c-1-1.5-2.9-2.2-4.7-1.7c-0.4,0.1-0.8,0.3-1.1,0.5L29.1,31.5C28.2,32,27.5,33,27.4,34 c-0.2,1.1,0,2.2,0.7,3c1,1.5,2.9,2.2,4.7,1.7c0.4-0.1,0.8-0.3,1.1-0.5l6.9-4.4c1.1-0.7,2.4-1.3,3.7-1.6c5.8-1.5,12,0.8,15.4,5.7 c2.1,2.9,2.9,6.5,2.3,10.1c-0.6,3.5-2.7,6.5-5.6,8.4L38.4,67.9C37.2,68.7,36,69.2,34.7,69.6'/%3E %3C/svg%3E";
 
       case Category.ANGULARJS:
-        return "https://c.staticblitz.com/assets/media/client/homepage/images/stack_icons/angularjs-31b91da342f0e4234c1d0526a4949c11.png";
+        return 'https://c.staticblitz.com/assets/media/client/homepage/images/stack_icons/angularjs-31b91da342f0e4234c1d0526a4949c11.png';
       case Category.IGNITE_UI:
-        return "https://c.staticblitz.com/assets/media/client/homepage/images/stack_icons/ignite-ui-cd0c4ecd59a57a1a59a17a4d7bcc43b9.png";
+        return 'https://c.staticblitz.com/assets/media/client/homepage/images/stack_icons/ignite-ui-cd0c4ecd59a57a1a59a17a4d7bcc43b9.png';
       case Category.KENDO_REACT:
-        return "https://c.staticblitz.com/assets/media/client/homepage/images/stack_icons/kendo-6a0c4821af08d43823ed93f416780f36.png";
+        return 'https://c.staticblitz.com/assets/media/client/homepage/images/stack_icons/kendo-6a0c4821af08d43823ed93f416780f36.png';
 
       case Category.REACT_TS:
-        return "https://c.staticblitz.com/assets/media/client/homepage/images/stack_icons/react-ts-8ff03c3af545dbf56c6adc1e9e145646.png";
-      
-      
+        return 'https://c.staticblitz.com/assets/media/client/homepage/images/stack_icons/react-ts-8ff03c3af545dbf56c6adc1e9e145646.png';
+
       case Category.AKITA:
-      return "https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/spaces%2F-LDIcOEJiLYk8yWho34E%2Favatar.png?generation=1531386974984915&alt=media"
+        return 'https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/spaces%2F-LDIcOEJiLYk8yWho34E%2Favatar.png?generation=1531386974984915&alt=media';
       case Category.NGRX:
-      return "https://ngrx.io/assets/images/badge.svg"
+        return 'https://ngrx.io/assets/images/badge.svg';
       case Category.NGXS:
-      return "https://avatars2.githubusercontent.com/u/37132593?s=280&v=4"
+        return 'https://avatars2.githubusercontent.com/u/37132593?s=280&v=4';
       case Category.ARTICLE:
-      return "https://blog.jmtalarn.com/logos/logo.black.svg"
+        return 'https://blog.jmtalarn.com/logos/logo.black.svg';
       case Category.SITE:
-      return "https://image.flaticon.com/icons/png/512/117/117965.png"
-      default: 
-      return "https://www.ffe.com/var/ezwebin_site/storage/images/media/images/logo-et-visuels-divers/mails/lien-mail/404531-1-fre-FR/Lien-mail_imagelarge.png"
-   
+        return 'https://image.flaticon.com/icons/png/512/117/117965.png';
+      case Category.GITHUB:
+        return 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTIgMGMtNi42MjYgMC0xMiA1LjM3My0xMiAxMiAwIDUuMzAyIDMuNDM4IDkuOCA4LjIwNyAxMS4zODcuNTk5LjExMS43OTMtLjI2MS43OTMtLjU3N3YtMi4yMzRjLTMuMzM4LjcyNi00LjAzMy0xLjQxNi00LjAzMy0xLjQxNi0uNTQ2LTEuMzg3LTEuMzMzLTEuNzU2LTEuMzMzLTEuNzU2LTEuMDg5LS43NDUuMDgzLS43MjkuMDgzLS43MjkgMS4yMDUuMDg0IDEuODM5IDEuMjM3IDEuODM5IDEuMjM3IDEuMDcgMS44MzQgMi44MDcgMS4zMDQgMy40OTIuOTk3LjEwNy0uNzc1LjQxOC0xLjMwNS43NjItMS42MDQtMi42NjUtLjMwNS01LjQ2Ny0xLjMzNC01LjQ2Ny01LjkzMSAwLTEuMzExLjQ2OS0yLjM4MSAxLjIzNi0zLjIyMS0uMTI0LS4zMDMtLjUzNS0xLjUyNC4xMTctMy4xNzYgMCAwIDEuMDA4LS4zMjIgMy4zMDEgMS4yMy45NTctLjI2NiAxLjk4My0uMzk5IDMuMDAzLS40MDQgMS4wMi4wMDUgMi4wNDcuMTM4IDMuMDA2LjQwNCAyLjI5MS0xLjU1MiAzLjI5Ny0xLjIzIDMuMjk3LTEuMjMuNjUzIDEuNjUzLjI0MiAyLjg3NC4xMTggMy4xNzYuNzcuODQgMS4yMzUgMS45MTEgMS4yMzUgMy4yMjEgMCA0LjYwOS0yLjgwNyA1LjYyNC01LjQ3OSA1LjkyMS40My4zNzIuODIzIDEuMTAyLjgyMyAyLjIyMnYzLjI5M2MwIC4zMTkuMTkyLjY5NC44MDEuNTc2IDQuNzY1LTEuNTg5IDguMTk5LTYuMDg2IDguMTk5LTExLjM4NiAwLTYuNjI3LTUuMzczLTEyLTEyLTEyeiIvPjwvc3ZnPg==';
+      default:
+        return 'https://www.ffe.com/var/ezwebin_site/storage/images/media/images/logo-et-visuels-divers/mails/lien-mail/404531-1-fre-FR/Lien-mail_imagelarge.png';
     }
   }
 }

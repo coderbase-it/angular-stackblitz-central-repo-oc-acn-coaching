@@ -42,6 +42,21 @@ export class LienService {
       'angular-repeat-scenario',
       'Repeat Scenario route with service logic  ⚙',
       Category.ANGULAR
+    ),
+    new Lien(
+      'https://github.com/coderbase-it/jest-test-app',
+      'Jest Test App',
+      Category.GITHUB
+    ),
+    new Lien(
+      'angular-fruit-ninja-cd-challenge',
+      'Challenge ChangeDetection Fruit Ninja 🥭🍑🍓🍌',
+      Category.ANGULAR
+    ),
+    new Lien(
+      'angular-fruit-ninja-cd-challenge-solution',
+      'Challenge ChangeDetection Fruit Ninja 🥭🍑🍓🍌 (Solution)',
+      Category.ANGULAR
     )
   ];
 
