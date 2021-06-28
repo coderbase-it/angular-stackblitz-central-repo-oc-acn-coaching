@@ -57,6 +57,11 @@ export class LienService {
       'angular-fruit-ninja-cd-challenge-solution',
       'Challenge ChangeDetection Fruit Ninja 🥭🍑🍓🍌 (Solution)',
       Category.ANGULAR
+    ),
+    new Lien(
+      'angular-ivy-why-not-bind-fn',
+      'Why we should not bind a Function directly in HTML ⚙',
+      Category.ANGULAR
     )
   ];
 
