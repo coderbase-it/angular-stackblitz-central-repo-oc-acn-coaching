@@ -62,6 +62,11 @@ export class LienService {
       'angular-ivy-why-not-bind-fn',
       'Why we should not bind a Function directly in HTML ⚙',
       Category.ANGULAR
+    ),
+    new Lien(
+      'https://github.com/coderbase-it/external-http-environment-config',
+      'External http environment config ⚙',
+      Category.GITHUB
     )
   ];
 
