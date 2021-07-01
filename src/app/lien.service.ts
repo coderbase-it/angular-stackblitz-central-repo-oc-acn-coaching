@@ -67,6 +67,11 @@ export class LienService {
       'https://github.com/coderbase-it/external-http-environment-config',
       'External http environment config ⚙',
       Category.GITHUB
+    ),
+    new Lien(
+      'https://github.com/coderbase-it/library-and-angular-element',
+      'Angular Library and Angular Elements ⚙',
+      Category.GITHUB
     )
   ];
 
