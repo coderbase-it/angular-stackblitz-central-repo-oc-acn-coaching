@@ -13,6 +13,11 @@ export class LienService {
   // order doesn't matter
   liens: Lien[] = [
     new Lien(
+      'angular-simple-routes',
+      'routes / child Routes / Lazy loading',
+      Category.ANGULAR
+    ),
+    new Lien(
       'angular-kingdom-dynamic-components-coderbase',
       'Angular ng-content / ng-template / dynamic component 🦄 🐉 ',
       Category.ANGULAR
