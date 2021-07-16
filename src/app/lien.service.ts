@@ -77,6 +77,11 @@ export class LienService {
       'https://github.com/coderbase-it/library-and-angular-element',
       'Angular Library and Angular Elements ⚙',
       Category.GITHUB
+    ),
+    new Lien(
+      'angular-yt3nnq',
+      'CVA nested form component Aquila Circle',
+      Category.ANGULAR
     )
   ];
 
