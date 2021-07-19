@@ -78,13 +78,20 @@ export class LienService {
       'Angular Library and Angular Elements ⚙',
       Category.GITHUB
     ),
-    new Lien('angular-npz5w5',
-    'Aquilla Simple ReactiveForm Circle ',
-    Category.ANGULAR),
+    new Lien(
+      'angular-npz5w5',
+      'Aquilla Simple ReactiveForm Circle ',
+      Category.ANGULAR
+    ),
     new Lien(
       'angular-yt3nnq',
       'CVA nested form component Aquila Circle',
       Category.ANGULAR
+    ),
+    new Lien(
+      'rxjs-ko5owt',
+      'Rxjs challenge rearrange post lists',
+      Category.RXJS
     )
   ];
 
