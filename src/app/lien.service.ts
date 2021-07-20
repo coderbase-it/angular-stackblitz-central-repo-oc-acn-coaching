@@ -92,7 +92,12 @@ export class LienService {
       'rxjs-ko5owt',
       'Rxjs challenge rearrange post lists',
       Category.RXJS
-    )
+    ),
+       new Lien(
+      'rxjs-yzy1yx',
+      'Rxjs challenge rearrange post lists Solution',
+      Category.RXJS
+    ),
   ];
 
   constructor() {}

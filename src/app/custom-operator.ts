@@ -1,4 +1,4 @@
-import { groupBy, map, mergeMap, toArray } from 'rxjs/operators';
+import { groupBy, map, mergeMap, tap, toArray } from 'rxjs/operators';
 import { OperatorFunction } from 'rxjs';
 //reusable custom rxjs operator
 // Don't touch this function until u know RXJS enough
@@ -13,6 +13,7 @@ export function customOp<R>(): OperatorFunction<any, any> {
           liens: data
         };
       }),
-      toArray()
+      toArray(),
+      tap(console.log)
     );
 }
