@@ -93,11 +93,17 @@ export class LienService {
       'Rxjs challenge rearrange post lists',
       Category.RXJS
     ),
-       new Lien(
+    new Lien(
       'rxjs-yzy1yx',
       'Rxjs challenge rearrange post lists Solution',
       Category.RXJS
     ),
+
+    new Lien(
+      'angular-ivy-xrkfbd',
+      'jsonPlaceholder SwitchMap/Pluck/debounceTime',
+      Category.RXJS
+    )
   ];
 
   constructor() {}
