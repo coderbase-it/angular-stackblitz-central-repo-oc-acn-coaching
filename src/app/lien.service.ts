@@ -103,7 +103,9 @@ export class LienService {
       'angular-ivy-xrkfbd',
       'jsonPlaceholder SwitchMap/Pluck/debounceTime',
       Category.RXJS
-    )
+    ),
+    new Lien('https://rxmarbles.com/', ' RxMarbles', Category.SITE),
+    new Lien('typescript-wfopdb', 'Typescript examples', Category.TYPESCRIPT)
   ];
 
   constructor() {}
